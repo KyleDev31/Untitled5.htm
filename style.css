@@ -1,0 +1,54 @@
+/* Set body background color */
+body {
+    background-color: #f7d9e9;
+}
+
+/* Style the header */
+h1 {
+    font-size: 3rem;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    color: #663399;
+    margin-top: 3rem;
+}
+
+/* Style the paragraph */
+p {
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    text-align-last: center;
+    color: #333333;
+    line-height: 1.5;
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the hyperlink */
+a {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    background-color: #663399;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+}
+
+a:hover {
+    background-color: #f7d9e9;
+    color: #663399;
+}
+
+
+

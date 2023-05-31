@@ -1,0 +1,159 @@
+/* hide the container by default */
+#letter {
+    display: none;
+}
+
+/* add a background image with hearts */
+body {
+    background-image: url('https://cdn.pixabay.com/photo/2017/07/20/03/46/heart-2520034_1280.png');
+    background-size: 50px;
+    background-repeat: repeat;
+    background-color: pink;
+
+}
+/* Style for romantic text */
+.romantic-text {
+    font-family: cursive;
+    font-size: 22px;
+    color: #ba4a8b;
+    text-align: center;
+    line-height: ;
+    margin-bottom: 20px;
+}
+
+.romantic-text strong {
+    font-size: 26px;
+    font-weight: bold;
+    color: #d8548f;
+}
+
+.romantic-text em {
+    font-style: italic;
+    font-weight: bold;
+    color: #ba4a8b;
+}
+
+.romantic-text::after {
+    content: "";
+    display: block;
+    height: 0px;
+    width: 100%;
+    background-color: #ba4a8b;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+     /* Style for home button */
+.home-btn {
+    display: inline-block;
+    background-color: pink;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid white;
+}
+
+.home-btn:hover {
+    background-color: white;
+    color: pink;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* style the envelope to look clickable */
+.envelope {
+    cursor: pointer;
+    border: 2px solid pink;
+    width: 200px;
+    height: 100px;
+    position: relative;
+    margin: 50px auto;
+    background: linear-gradient(to bottom right, white, pink);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.envelope:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 180px;
+    height: 80px;
+
+}
+
+.envelope:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 160px;
+    height: 60px;
+    
+}
+
+.envelope .flap {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: -50px;
+    width: 100px;
+    height: 60px;
+    background: pink;
+    transform-origin: top right;
+    transform: rotate(45deg);
+}
+
+/* add heart decorations */
+.envelope:before,
+.envelope:after,
+.envelope .flap {
+    background-image: url('https://cdn.pixabay.com/photo/2017/07/20/03/46/heart-2520034_1280.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* show the container when the envelope is clicked */
+.envelope.opened ~ #letter {
+    display: block;
+}
+
+/* style the header */
+header {
+
+    text-align: center;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+
+header h1 {
+    font-size: 36px;
+    color: white;
+
+    margin: 0;
+}
+
+h1 {
+    background-image: url('us.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: pink;
+    font-size: 48px;
+    text-align: center;
+    padding: 100px 20px;
+    margin-bottom: 10px;
+
+}
+
+
